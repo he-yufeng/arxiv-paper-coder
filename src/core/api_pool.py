@@ -37,7 +37,10 @@ class APIKeyInfo:
         """Mark this key as recently used."""
         self.calls_count += 1
         self.last_used = time.time()
-    
+        # A successful call clears the consecutive-error streak, so transient
+        # failures spread across a key's lifetime don't eventually disable it.
+        self.errors = 0
+
     def mark_error(self):
         """Mark an error for this key."""
         self.errors += 1

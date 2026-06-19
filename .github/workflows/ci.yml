@@ -44,5 +44,5 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
-      - name: Run tests (tools only, agents require API keys)
-        run: pytest tests/test_tools.py -v --tb=short
+      - name: Run tests (tools and core, agents require API keys)
+        run: pytest tests/test_tools.py tests/test_api_pool.py -v --tb=short
