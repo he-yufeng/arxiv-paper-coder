@@ -10,7 +10,6 @@ import time
 from openai import AsyncOpenAI
 import httpx
 from rich.console import Console
-from anthropic import AsyncAnthropic
 
 console = Console()
 
