@@ -113,6 +113,14 @@ run_agent.py   CLI entry point
 - [Architecture](docs/architecture.md)
 - [API reference](docs/api.md)
 
+## Related Projects
+
+arxiv-paper-coder is one of my LLM projects. A few others I've built around agents and LLM systems:
+
+- **[CoreCoder](https://github.com/he-yufeng/CoreCoder)** — want to understand how a coding agent really works? Read the whole ~1k-line engine end to end, not a black box.
+- **[RepoWiki](https://github.com/he-yufeng/RepoWiki)** — dropped into an unfamiliar codebase? It gives you a guided wiki and a where-to-start reading path, a self-hostable DeepWiki alternative.
+- **[FindJobs-Agent](https://github.com/he-yufeng/FindJobs-Agent)** — stop sifting job boards by hand: it ranks postings against your resume and runs mock interviews.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
